@@ -5,17 +5,20 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { InputdetailsComponent } from './details/inputdetails/inputdetails.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DisplaydetailsComponent } from './details/displaydetails/displaydetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputdetailsComponent
+    InputdetailsComponent,
+    DisplaydetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

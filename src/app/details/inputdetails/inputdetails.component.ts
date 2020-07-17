@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputdetailsComponent implements OnInit {
 
+
   constructor() { }
-  hide = true;
   ngOnInit(): void {
   }
-
+  adddetails(userform){
+    console.log('Form submitted.',userform);
+  }
 }

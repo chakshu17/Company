@@ -1,14 +1,39 @@
-<h3> Employee Input </h3>
+<div class="mainstyle" fxLayout="column">
+  <h2> Kharak Input: </h2>
+  <div fxLayout="column" style="width: 15%;">
+    <form #userform>
+      <mat-form-field>
+        <mat-label>Enter Name</mat-label>
+        <input matInput required name="name">
+      </mat-form-field>
 
-<div class="example-container">
-  <mat-form-field appearance="fill">
-    <mat-label>Enter Name</mat-label>
-    <input matInput>
-  </mat-form-field>
+      <section fxLayout fxLayoutGap="30px">
+        <mat-form-field>
+          <mat-label>Quantity Given</mat-label>
+          <input matInput type="number" name="qgiven">
+          <span matSuffix>kg&nbsp;</span>
+        </mat-form-field>
 
-  <mat-form-field appearance="fill">
-    <mat-label>Amount</mat-label>
-    <input matInput type="number" class="example-right-align">
-    <span matPrefix>Rs&nbsp;</span>
-  </mat-form-field>
+        <mat-form-field>
+          <mat-label>Date of Given Product</mat-label>
+          <input matInput type="date" name="date">
+        </mat-form-field>
+      </section>
+
+      <section fxLayout fxLayoutGap="30px">
+        <mat-form-field>
+          <mat-label>Quantity Recieved</mat-label>
+          <input matInput type="number" name="qrecieved">
+          <span matSuffix>kg&nbsp;</span>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Date of Recieved Product</mat-label>
+          <input matInput type="date" name="date">
+        </mat-form-field>
+      </section>
+
+      <button mat-raised-button color="primary" type="button" (click)="adddetails(userform)">Add Deatils</button>
+    </form>
+  </div>
 </div>
