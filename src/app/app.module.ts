@@ -13,12 +13,14 @@ import { AppComponent } from './app.component';
 import { InputdetailsComponent } from './details/inputdetails/inputdetails.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DisplaydetailsComponent } from './details/displaydetails/displaydetails.component';
+import { PaymentComponent } from './details/payment/payment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputdetailsComponent,
-    DisplaydetailsComponent
+    DisplaydetailsComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

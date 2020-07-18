@@ -16,7 +16,7 @@
 
         <mat-form-field>
           <mat-label>Date of Given Product</mat-label>
-          <input matInput type="date" name="date">
+          <input matInput type="date" name="givendate">
         </mat-form-field>
       </section>
 
@@ -29,11 +29,15 @@
 
         <mat-form-field>
           <mat-label>Date of Recieved Product</mat-label>
-          <input matInput type="date" name="date">
+          <input matInput type="date" name="recieveddate">
         </mat-form-field>
       </section>
 
       <button mat-raised-button color="primary" type="button" (click)="adddetails(userform)">Add Deatils</button>
+
+      <button mat-raised-button color="accent" type="button" >Payment</button>
+
+     <!-- <app-payment></app-payment> -->
     </form>
   </div>
 </div>
