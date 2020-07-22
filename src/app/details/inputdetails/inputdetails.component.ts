@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-inputdetails',
   templateUrl: './inputdetails.component.html',
@@ -11,7 +11,10 @@ export class InputdetailsComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
   }
-  adddetails(userform){
-    console.log('Form submitted.',userform);
+  adddetails(f){
+    console.log('Form submitted.',f);
+  }
+  onclick(){
+
   }
 }

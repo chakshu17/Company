@@ -1,10 +1,10 @@
 <div class="mainstyle" fxLayout="column">
   <h2> Kharak Input: </h2>
   <div fxLayout="column" style="width: 15%;">
-    <form #userform>
+    <form (ngSubmit)="onclick()" >
       <mat-form-field>
         <mat-label>Enter Name</mat-label>
-        <input matInput required name="name">
+        <input matInput required ngModel name="name">
       </mat-form-field>
 
       <section fxLayout fxLayoutGap="30px">
@@ -33,7 +33,7 @@
         </mat-form-field>
       </section>
 
-      <button mat-raised-button color="primary" type="button" (click)="adddetails(userform)">Add Deatils</button>
+      <button mat-raised-button color="primary" type="button" >Add Deatils</button>
 
       <button mat-raised-button color="accent" type="button" >Payment</button>
 
