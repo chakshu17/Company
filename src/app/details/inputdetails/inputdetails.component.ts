@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InputdeatilsService } from '../../service/deatils/inputdeatils.service';
 import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-inputdetails',
@@ -7,14 +8,20 @@ import { NgForm } from '@angular/forms';
 })
 export class InputdetailsComponent implements OnInit {
 
-
-  constructor() { }
+  counter:number=0;
+  constructor(private service: InputdeatilsService) { }
   ngOnInit(): void {
   }
-  adddetails(f){
-    console.log('Form submitted.',f);
-  }
-  onclick(){
-
+  // adddetails(f:NgForm){
+  //   console.log('Form submitted.',f);
+  // }
+  onclick(f:NgForm){
+    this.service.adddeatils({
+      name: f.value.name,
+      qgiven: f.value.qgiven,
+      givendate :f.value.givendate,
+      qrecieved: f.value.qrecieved,
+      recieveddate: f.value.recieveddate,
+    });
   }
 }

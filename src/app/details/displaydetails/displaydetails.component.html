@@ -1,11 +1,11 @@
 <div class="mainstyle">
   <h2> Employee Details:</h2>
-  <form>
+  <form (ngSubmit)="onlcick(f)" #f="ngForm">
     <mat-form-field>
       <mat-label>Enter Name</mat-label>
       <input matInput required>
     </mat-form-field>
     <br>
-    <button mat-raised-button color="primary" type="button" (click)="showdetails()">Submit</button>
+    <button mat-raised-button color="primary" type="button" >Submit</button>
   </form>
 </div>

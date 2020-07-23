@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-displaydetails',
@@ -13,5 +14,8 @@ export class DisplaydetailsComponent implements OnInit {
   }
   showdetails(){
     console.log("Information is Displayed.");
+  }
+  onlcick(f:NgForm){
+
   }
 }
